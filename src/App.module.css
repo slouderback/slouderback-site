@@ -1,20 +1,54 @@
+:root {
+  --color-dark-text: rgb(65, 75, 75);
+  --color-text: black;
+  --font-weight-heavy: 500;
+  --font-weight-medium: 500;
+  --color-background: rgb(240, 240, 240);
+}
+
 .App {
-  background-color: #282c34;
+  background-color: var(--color-background);
   min-height: 100vh;
+  padding-top: 25px;
 }
 
 .nav {
-  background-color: blue;
   margin: auto;
   padding: 0;
   list-style-type: none;
-  width: 80%;
+  text-decoration: none;
+  width: 95%;
   display: flex;
-  justify-content: space-between;
-  color: white;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  font-size: 1.75rem;
+}
+
+.links {
+  text-decoration: none;
+}
+
+.logo {
+  margin-right: auto;
+  /* margin-left: 0px; */
+  /* height: 50px; */
+}
+
+.logoImage {
+  height: 50px;
 }
 
 .linkText {
-  text-decoration: none;
-  color: white;
+  color: black;
+  padding: 3px 10px;
+}
+
+.linkText:hover {
+  text-decoration: underline;
+}
+
+.bodyContainer {
+  /* border: purple 2px solid; */
+  margin: 50px 10% 0px 10%;
 }

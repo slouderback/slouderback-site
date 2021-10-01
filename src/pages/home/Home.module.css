@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.25rem;
+  /* border: red 2px solid; */
+}
+
+.name {
+  opacity: 0;
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-duration: 3s;
+  font-size: 4rem;
+  font-weight: var(--font-weight-heavy);
+  color: var(--color-dark-text);
+  margin-top: 150px;
+  margin-bottom: 20px;
+}
+
+.subText {
+  opacity: 0;
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-duration: 3s;
+  font-weight: var(--font-weight-medium);
+}
+
+.welcomeMessage {
+  opacity: 0;
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-duration: 3s;
+  font-weight: var(--font-weight-medium);
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
